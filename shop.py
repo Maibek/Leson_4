@@ -5,7 +5,7 @@ from selenium import webdriver
 
 a = 'David@gmail.com'
 b = 'IxgPgWv9~q'
-driver = webdriver.Chrome('D:\QATesting\chromedriver.exe')
+driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(5)
 wait = WebDriverWait(driver, 5)
@@ -39,7 +39,7 @@ from selenium import webdriver
 
 a = 'David@gmail.com'
 b = 'IxgPgWv9~q'
-driver = webdriver.Chrome('D:\QATesting\chromedriver.exe')
+driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(5)
 wait = WebDriverWait(driver, 5)
@@ -74,7 +74,7 @@ from selenium.webdriver.support.select import Select
 
 a = 'David@gmail.com'
 b = 'IxgPgWv9~q'
-driver = webdriver.Chrome('D:\QATesting\chromedriver.exe')
+driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(5)
 wait = WebDriverWait(driver, 5)
@@ -123,7 +123,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 a = 'David@gmail.com'
 b = 'IxgPgWv9~q'
-driver = webdriver.Chrome('D:\QATesting\chromedriver.exe')
+driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(5)
 wait = WebDriverWait(driver, 5)
@@ -172,7 +172,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 a = 'David@gmail.com'
 b = 'IxgPgWv9~q'
-driver = webdriver.Chrome('D:\QATesting\chromedriver.exe')
+driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(5)
 wait = WebDriverWait(driver, 5)
@@ -221,7 +221,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 a = 'David@gmail.com'
 b = 'IxgPgWv9~q'
-driver = webdriver.Chrome('D:\QATesting\chromedriver.exe')
+driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(5)
 wait = WebDriverWait(driver, 5)
@@ -278,7 +278,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 a = 'David@gmail.com'
 b = 'IxgPgWv9~q'
-driver = webdriver.Chrome('D:\QATesting\chromedriver.exe')
+driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(5)
 wait = WebDriverWait(driver, 5)

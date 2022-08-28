@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
 a = 'David@gmail.com'
 b = 'IxgPgWv9~q'
-driver = webdriver.Chrome('D:\QATesting\chromedriver.exe')
+driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(5)
 wait = WebDriverWait(driver, 5)

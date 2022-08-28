@@ -2,7 +2,7 @@ import time
 
 from selenium import webdriver
 
-driver = webdriver.Chrome('D:\QATesting\chromedriver.exe')
+driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(5)
 driver.get('https://practice.automationtesting.in')
