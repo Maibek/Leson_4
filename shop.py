@@ -93,11 +93,22 @@ log.click()
 shop = driver.find_element_by_id('menu-item-40')
 shop.click()
 
-# Не получается сделать проверку выбраного значения в селекторе.
-
-element = driver.find_element_by_name('orderby')
-select_element_2 = Select(element)
-select_element_2.select_by_value('price-desc')
+# Проверка сортировки по умолчанию
+items_selector = driver.find_element_by_name("orderby")
+items_selector_default = items_selector.get_attribute("value")
+if items_selector_default == "menu_order":
+    print("Выбрана сортировка по умолчанию")
+else:
+    print("Выбрана сортировка НЕ по умолчанию")
+# Сортировка от большего к меньшему и проверка
+select = Select(items_selector)
+select.select_by_value("price-desc")
+items_selector = driver.find_element_by_name("orderby")
+items_selector_low = items_selector.get_attribute("value")
+if items_selector_low == "price-desc":
+    print("Выбрана сортировка по убыванию")
+else:
+    print("Выбрана сортировка НЕ по убыванию")
 
 driver.quit()
 
